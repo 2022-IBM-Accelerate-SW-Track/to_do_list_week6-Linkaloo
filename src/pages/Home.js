@@ -39,7 +39,8 @@ class Home extends Component {
       data: {jsonObject},
       headers: {
         "Content-Type": "application/json"
-      }
+      },
+      withCredentials: true
     }).then(res => {
         console.log(res.data.message);
     });
